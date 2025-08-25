@@ -1,12 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Basic -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
-    <title>MEHUL PATEL</title>
-    <meta name="description" content="MEHUL PATEL">
+    <title>MEHUL PATEL - SHIVANSH INFOSYS</title>
+    <meta name="description"
+        content="Founded in April 2007, Shivansh Infosys began with a vision to deliver exceptional service to our clients. Our commitment to excellence has driven our growth and success in the industry.">
     <link rel="canonical" href="https://mehul-patel.vercel.app/">
     <meta name="robots" content="index,follow">
     <link rel="icon" href="/images/favicon.ico">
@@ -14,12 +15,13 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="MEHUL PATEL">
-    <meta property="og:description" content="MEHUL PATEL">
+    <meta property="og:title" content="MEHUL PATEL - SHIVANSH INFOSYS">
+    <meta property="og:description"
+        content="Founded in April 2007, Shivansh Infosys began with a vision to deliver exceptional service to our clients. Our commitment to excellence has driven our growth and success in the industry.">
     <meta property="og:url" content="https://mehul-patel.vercel.app/">
     <meta property="og:site_name" content="Shivansh Infosys / MagicallySoft">
-    <meta property="og:image" content="/images/s-logo.pngf">
-    <meta property="og:image:secure_url" content="/images/s-logo.png">
+    <meta property="og:image" content="https://mehul-patel.vercel.app/images/s-logo.png">
+    <meta property="og:image:secure_url" content="https://mehul-patel.vercel.app/images/s-logo.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -29,9 +31,10 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@YourTwitterHandle">
     <meta name="twitter:creator" content="@YourTwitterHandle">
-    <meta name="twitter:title" content="MEHUL PATEL">
-    <meta name="twitter:description" content="MEHUL PATEL">
-    <meta name="twitter:image" content="/images/s-logo.pngf">
+    <meta name="twitter:title" content="MEHUL PATEL - SHIVANSH INFOSYS">
+    <meta name="twitter:description"
+        content="Founded in April 2007, Shivansh Infosys began with a vision to deliver exceptional service to our clients. Our commitment to excellence has driven our growth and success in the industry.">
+    <meta name="twitter:image" content="https://mehul-patel.vercel.app/images/s-logo.png">
     <meta name="theme-color" content="#0f3d3e">
 
     <!-- Structured Data (JSON-LD) -->
@@ -46,7 +49,7 @@
         "@type": "Organization",
         "name": "Abc Salon"
       },
-      "image": "/images/s-logo.png",
+      "image": "https://mehul-patel.vercel.app/images/s-logo.png",
       "url": "https://mehul-patel.vercel.app/",
       "sameAs": [
         "https://bitly.cx/rNEH4",
@@ -99,6 +102,31 @@
             --border-radius: 12px;
             --border-radius-lg: 20px;
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --mobile-width: 480px;
+            --tablet-width: 768px;
+        }
+
+        /* Desktop container for mobile/tablet view */
+        @media (min-width: 1024px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                min-height: 100vh;
+                padding: 20px;
+                background: #000000 !important;
+                /* Solid color instead of gradient for desktop background */
+            }
+
+            .mobile-tablet-container {
+                width: var(--mobile-width);
+                max-width: 100%;
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+                border-radius: 20px;
+                overflow: hidden;
+                position: relative;
+                background: var(--teal-gradient);
+            }
         }
 
         /* Performance optimizations */
@@ -125,7 +153,6 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            /*min-height: 100vh;*/
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             overflow-x: hidden;
@@ -137,7 +164,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            /*padding-top: 1.5rem;*/
         }
 
         .hero-bg {
@@ -323,7 +349,6 @@
 
         .social-btn:hover,
         .social-btn:focus {
-            /* transform: translateY(-4px) scale(1.05);*/
             background: rgba(255, 255, 255, 0.1);
             color: #fff;
             box-shadow: var(--shadow-primary);
@@ -348,13 +373,11 @@
             font-family: "Playfair Display", serif;
             color: #fff;
             font-size: 1.8rem;
-            text-align: center;
+            text-align: center !important;
             margin-bottom: 2rem;
             font-weight: 600;
             position: relative;
             display: inline-block;
-            left: 50%;
-            transform: translateX(-50%);
             padding-bottom: 0.5rem;
         }
 
@@ -655,7 +678,6 @@
 
         .date-input:focus {
             outline: none;
-            /* border-color: var(--gold-primary);*/
             box-shadow: 0 0 0 3px rgba(202, 164, 95, 0.3);
             background: rgba(255, 255, 255, 0.08);
         }
@@ -812,7 +834,6 @@
             }
         }
 
-
         /* Animation keyframes */
         @keyframes fadeInUp {
             from {
@@ -949,6 +970,101 @@
             }
         }
 
+        /* Mobile-specific improvements */
+        @media (max-width: 767px) {
+
+            /* Improved touch targets for mobile */
+            .social-btn,
+            .company-link {
+                min-height: 44px;
+                /* Minimum touch target size */
+                min-width: 44px;
+            }
+
+            /* Better spacing for mobile */
+            .intro {
+                padding: 1.2rem 1rem 0.8rem;
+            }
+
+            .intro h1 {
+                font-size: 1.9rem;
+            }
+
+            .intro .subtitle {
+                font-size: 1rem;
+            }
+
+            .intro .description {
+                font-size: 0.9rem;
+                margin-bottom: 1.2rem;
+            }
+
+            /* Improved spacing for contact cards */
+            .contact-section {
+                padding: 2rem 0;
+            }
+
+            .info-card {
+                padding: 1rem;
+            }
+
+            .info-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+            }
+
+            .info-text .value {
+                font-size: 0.9rem;
+            }
+
+            /* Better service card sizing */
+            .service-card {
+                flex: 0 0 82%;
+            }
+
+            /* Improved section titles for mobile */
+            .section-title,
+            .services-title,
+            .appointment-title {
+                font-size: 1.6rem;
+                margin-bottom: 1.5rem;
+            }
+
+            /* Better button sizing */
+            .book-btn {
+                min-width: auto;
+                width: 100%;
+                max-width: 280px;
+            }
+
+            /* Improved map height */
+            .map-container {
+                height: 180px;
+            }
+        }
+
+        /* Tablet-specific improvements */
+        @media (min-width: 768px) and (max-width: 1023px) {
+
+            /* Better service card sizing for tablet */
+            .service-card {
+                flex: 0 0 42%;
+            }
+
+            /* Improved section spacing */
+            .contact-section,
+            .services-wrap,
+            .appointment-wrap {
+                padding: 3rem 0;
+            }
+
+            /* Better map height */
+            .map-container {
+                height: 200px;
+            }
+        }
+
         /* Print styles */
         @media print {
 
@@ -975,274 +1091,480 @@
                 scroll-behavior: auto;
             }
         }
+
+        /* ENHANCEMENTS FOR MOBILE AND TABLET */
+
+        /* Improved navigation for mobile */
+        .mobile-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--teal-primary);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            padding: 0.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            display: none;
+        }
+
+        .mobile-nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.7rem;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .mobile-nav-item i {
+            font-size: 1.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .mobile-nav-item.active {
+            color: var(--gold-primary);
+        }
+
+        /* Show mobile nav only on mobile */
+        @media (max-width: 767px) {
+            .mobile-nav {
+                display: flex;
+            }
+
+            /* Add padding to bottom of content to account for fixed nav */
+            main {
+                padding-bottom: 60px;
+            }
+        }
+
+        /* Improved touch feedback */
+        .touch-feedback:active {
+            transform: scale(0.97);
+            opacity: 0.8;
+        }
+
+        /* Enhanced focus states for accessibility */
+        .social-btn:focus-visible,
+        .company-link:focus-visible,
+        .info-card:focus-visible,
+        .book-btn:focus-visible {
+            outline: 2px solid var(--gold-primary);
+            outline-offset: 2px;
+        }
+
+        /* Improved scrolling for services on mobile */
+        .services-scroll {
+            scroll-padding: 1.2rem;
+            scroll-snap-stop: always;
+        }
+
+        /* Better contrast for text */
+        .intro .description,
+        .info-text .value {
+            color: #ffffff;
+            opacity: 0.9;
+        }
+
+        /* Enhanced section transitions */
+        section {
+            scroll-margin-top: 20px;
+        }
+
+        /* Improved loading experience */
+        .lazy-load {
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+        }
+
+        .lazy-load.loaded {
+            opacity: 1;
+        }
+
+        /* Better handling of long text on mobile */
+        .info-text .value {
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        /* Improved service card touch targets */
+        .service-card {
+            cursor: pointer;
+        }
+
+        /* Enhanced YouTube and Drive sections for mobile */
+        @media (max-width: 767px) {
+            .youtube-playlist-section,
+            .drive-download-section {
+                padding: 2rem 0;
+            }
+
+            .drive-preview iframe {
+                height: 250px;
+            }
+        }
+
+        /* Tablet-specific service card adjustments */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .service-card {
+                flex: 0 0 38%;
+            }
+        }
+
+        /* Better visual hierarchy for mobile */
+        @media (max-width: 767px) {
+            .section-title::after,
+            .services-title::after,
+            .appointment-title::after {
+                left: 20%;
+                width: 60%;
+            }
+        }
+
+        /* Improved back to top button for mobile */
+        .back-to-top {
+            position: fixed;
+            bottom: 70px;
+            right: 15px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gold-primary);
+            color: var(--teal-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-primary);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Improved focus management for screen readers */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Enhanced form elements */
+        .date-input {
+            font-size: 16px; /* Prevents zoom on iOS */
+        }
+
+        /* Better icon alignment */
+        .info-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 
 <body>
-    <main role="main">
-        <!-- HERO SECTION -->
-        <header class="hero-wrap">
+    <div class="mobile-tablet-container">
+        <main role="main">
+            <!-- HERO SECTION -->
+            <header class="hero-wrap">
 
-            <div class="hero-bg" aria-hidden="true">
-                <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150" preserveAspectRatio="none">
-                    <path d="M0,80 C360,160 1080,0 1440,80 L1440,150 L0,150 Z"
-                        fill="linear-gradient(180deg, #000000 0%, #C50202 90%, #000000 100%)"></path>
-                </svg>
-            </div>
-
-            <div class="profile-photo" role="img" aria-label="MEHUL PATEL profile photo">
-                <img src="images/founder.avif" alt="MEHUL PATEL - Professional Hair Dresser" loading="lazy">
-            </div>
-
-            <div class="intro">
-                <h1>MEHUL PATEL</h1>
-                <div class="subtitle">CEO &amp; Founder – Shivansh Infosys
-                </div>
-                <p class="description">
-                    Founded in April 2007, Shivansh Infosys began with a vision to deliver exceptional service to our
-                    clients. Our commitment to excellence has driven our growth and success in the industry.
-                </p>
-
-                <div class="company-links">
-                    <a href="https://shivanshinfosys.in" target="_blank" class="company-link d-flex align-items-center">
-                        <span><i class="fas fa-globe me-1"></i></span> <span>Shivansh Infosys</span>
-                    </a>
+                <div class="hero-bg" aria-hidden="true">
+                    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150"
+                        preserveAspectRatio="none">
+                        <path d="M0,80 C360,160 1080,0 1440,80 L1440,150 L0,150 Z"
+                            fill="linear-gradient(180deg, #000000 0%, #C50202 90%, #000000 100%)"></path>
+                    </svg>
                 </div>
 
-                <nav class="social-row" aria-label="Social media links">
-                    <a href="https://bitly.cx/rNEH4" class="social-btn" title="Contact via WhatsApp"
-                        aria-label="Youtube">
-                        <i class="fab fa-youtube" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://api.whatsapp.com/send/?phone=8141703007&text&type=phone_number&app_absent=0"
-                        class="social-btn" title="Contact via WhatsApp" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/mehul-patel-0a7973355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                        class="social-btn" title="Connect on LinkedIn" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.instagram.com/shivansh_infosys?igsh=MW5vdjB5YTY2Y2pmdw==" class="social-btn"
-                        title="Follow on Instagram" aria-label="Instagram">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61573592214242&mibextid=rS40aB7S9Ucbxw6v"
-                        class="social-btn" title="Follow on Facebook" aria-label="Facebook">
-                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                    </a>
-                </nav>
-            </div>
-        </header>
+                <div class="profile-photo" role="img" aria-label="MEHUL PATEL profile photo">
+                    <img src="images/founder.avif" alt="MEHUL PATEL - Professional Hair Dresser" loading="lazy">
+                </div>
 
-        <!-- CONTACT SECTION -->
-        <section class="contact-section">
-            <div class="container">
-                <h2 class="section-title">Contact Information</h2>
+                <div class="intro">
+                    <h1>MEHUL PATEL</h1>
+                    <div class="subtitle">CEO &amp; Founder – Shivansh Infosys
+                    </div>
+                    <p class="description">
+                        Founded in April 2007, Shivansh Infosys began with a vision to deliver exceptional service to
+                        our
+                        clients. Our commitment to excellence has driven our growth and success in the industry.
+                    </p>
 
-                <div class="row g-4">
-                    <div class="col-12 col-md-6">
-                        <a class="info-link d-block" href="mailto:shivanshinfosys@gmail.com" aria-label="Email Me">
-                            <article class="info-card">
-                                <div class="info-icon" aria-hidden="true">
-                                    <i class="far fa-envelope"></i>
-                                </div>
-                                <div class="info-text">
-                                    <small>E-mail address</small>
-                                    <div class="value">shivanshinfosys@gmail.com</div>
-                                </div>
-                            </article>
+                    <div class="company-links">
+                        <a href="https://shivanshinfosys.in" target="_blank"
+                            class="company-link d-flex align-items-center touch-feedback">
+                            <span><i class="fas fa-globe me-1"></i></span> <span>Shivansh Infosys</span>
                         </a>
                     </div>
 
-                    <div class="col-12 col-md-6">
-                        <a class="info-link d-block" href="tel:+918141703007" aria-label="Call Me">
-                            <article class="info-card">
-                                <div class="info-icon" aria-hidden="true">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="info-text">
-                                    <small>Mobile Number</small>
-                                    <div class="value">+91 8141703007</div>
-                                </div>
-                            </article>
+                    <nav class="social-row" aria-label="Social media links">
+                        <a href="https://bitly.cx/rNEH4" class="social-btn touch-feedback" title="Contact via WhatsApp"
+                            aria-label="Youtube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
                         </a>
-                    </div>
+                        <a href="https://api.whatsapp.com/send/?phone=8141703007&text&type=phone_number&app_absent=0"
+                            class="social-btn touch-feedback" title="Contact via WhatsApp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mehul-patel-0a7973355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            class="social-btn touch-feedback" title="Connect on LinkedIn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shivansh_infosys?igsh=MW5vdjB5YTY2Y2pmdw=="
+                            class="social-btn touch-feedback" title="Follow on Instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61573592214242&mibextid=rS40aB7S9Ucbxw6v"
+                            class="social-btn touch-feedback" title="Follow on Facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                </div>
+            </header>
 
-                    <div class="col-12 col-md-6">
-                        <a class="info-link d-block" href="https://maps.app.goo.gl/hX9uJ7kRkJgqovkT8" target="_blank"
-                            rel="noopener" aria-label="Open location in maps">
-                            <article class="info-card">
-                                <div class="info-icon" aria-hidden="true">
-                                    <i class="fas fa-location-dot"></i>
-                                </div>
-                                <div class="info-text">
-                                    <small>Location</small>
-                                    <div class="value">
-                                        214, 215 Soham Arcade, Green city, Adajan, Surat, Gujarat
+            <!-- CONTACT SECTION -->
+            <section class="contact-section" id="contact">
+                <div class="container">
+                    <h2 class="section-title">Contact Information</h2>
+
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6">
+                            <a class="info-link d-block" href="mailto:shivanshinfosys@gmail.com" aria-label="Email Me">
+                                <article class="info-card touch-feedback">
+                                    <div class="info-icon" aria-hidden="true">
+                                        <i class="far fa-envelope"></i>
                                     </div>
-                                </div>
-                            </article>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="map-container">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4577.419796498114!2d72.7712071!3d21.189703700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04db2480c89d9%3A0x41a9df463ca6ff0d!2sSoham%20Arcade!5e1!3m2!1sen!2sin!4v1755949082557!5m2!1sen!2sin"
-                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <div class="info-text">
+                                        <small>E-mail address</small>
+                                        <div class="value">shivanshinfosys@gmail.com</div>
+                                    </div>
+                                </article>
+                            </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- YOUTUBE PLAYLIST SECTION -->
-        <section class="youtube-playlist-section">
-            <div class="container">
-                <h3 class="section-title">Latest Videos — YouTube Playlist</h3>
-
-                <!-- Responsive iframe embed for a playlist.
-                     Replace YOUR_PLAYLIST_ID_HERE with the actual playlist ID. -->
-                <div class="video-wrap" aria-hidden="false" aria-label="YouTube playlist">
-                    <div class="responsive-iframe">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed?listType=playlist&list=PLNcUsPyNOn2HpSjK7DSw3b0QXa3___y86"
-                            title="YouTube playlist" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-
-                <p class="playlist-cta">
-                    Watch on YouTube:
-                    <a href="https://www.youtube.com/playlist?list=PLNcUsPyNOn2HpSjK7DSw3b0QXa3___y86" target="_blank" rel="noopener"
-                        class="link-inline" aria-label="Open playlist on YouTube">Open playlist on YouTube</a>
-                </p>
-            </div>
-        </section>
-
-        <!-- GOOGLE DRIVE PDF DOWNLOAD SECTION -->
-        <section class="drive-download-section">
-            <div class="container">
-                <h3 class="section-title">List of TDL with Benifits & Fetures</h3>
-
-                <div class="row g-4 align-items-center">
-                    <div class="col-12 col-md-6">
-                        <!-- Drive inline preview. Replace YOUR_DRIVE_FILE_ID_HERE with the actual Drive file id -->
-                        <div class="drive-preview" aria-hidden="false" aria-label="PDF preview">
-                            <iframe src="https://drive.google.com/file/d/1RWv5NItQ4Eut6Ws0rsgcryB4AIILXcQm/preview" width="100%"
-                                height="420" style="border: none;" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+                        <div class="col-12 col-md-6">
+                            <a class="info-link d-block" href="tel:+918141703007" aria-label="Call Me">
+                                <article class="info-card touch-feedback">
+                                    <div class="info-icon" aria-hidden="true">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <small>Mobile Number</small>
+                                        <div class="value">+91 8141703007</div>
+                                    </div>
+                                </article>
+                            </a>
                         </div>
-                    </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="download-card info-card">
-                            <div class="info-icon" aria-hidden="true">
-                                <i class="fas fa-file-pdf"></i>
+                        <div class="col-12 col-md-6">
+                            <a class="info-link d-block" href="https://maps.app.goo.gl/hX9uJ7kRkJgqovkT8"
+                                target="_blank" rel="noopener" aria-label="Open location in maps">
+                                <article class="info-card touch-feedback">
+                                    <div class="info-icon" aria-hidden="true">
+                                        <i class="fas fa-location-dot"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <small>Location</small>
+                                        <div class="value">
+                                            214, 215 Soham Arcade, Green city, Adajan, Surat, Gujarat
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4577.419796498114!2d72.7712071!3d21.189703700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04db2480c89d9%3A0x41a9df463ca6ff0d!2sSoham%20Arcade!5e1!3m2!1sen!2sin!4v1755949082557!5m2!1sen!2sin"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
-                            <div class="info-text">
-                                <small>Brochure PDF</small>
-                                <div class="value">Shivansh Infosys — Services &amp; Pricing</div>
-                                <p style="margin-top:0.5rem; opacity:0.9;">Make sure the file is shared as
-                                    <strong>Anyone with the link — Viewer</strong> in Google Drive.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                                <!-- Direct-download link. JS will replace data-file-id into a working link. -->
-                                <div style="margin-top:0.75rem;">
-                                    <a id="drive-download-btn" class="btn btn-primary mt-2" href="#"
-                                        data-file-id="1RWv5NItQ4Eut6Ws0rsgcryB4AIILXcQm" aria-label="Download brochure PDF">
+            <!-- YOUTUBE PLAYLIST SECTION -->
+            <section class="youtube-playlist-section" id="videos">
+                <div class="container">
+                    <h3 class="section-title"> Customize Tool Playlist</h3>
+
+                    <!-- Responsive iframe embed for a playlist.
+                         Replace YOUR_PLAYLIST_ID_HERE with the actual playlist ID. -->
+                    <div class="video-wrap" aria-hidden="false" aria-label="YouTube playlist">
+                        <div class="responsive-iframe">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed?listType=playlist&list=PLNcUsPyNOn2HpSjK7DSw3b0QXa3___y86"
+                                title="YouTube playlist" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <p class="playlist-cta">
+                        Watch on YouTube:
+                        <a href="https://www.youtube.com/playlist?list=PLNcUsPyNOn2HpSjK7DSw3b0QXa3___y86"
+                            target="_blank" rel="noopener" class="link-inline touch-feedback"
+                            aria-label="Open playlist on YouTube">Open playlist on
+                            YouTube</a>
+                    </p>
+                </div>
+            </section>
+
+            <!-- SERVICES SECTION -->
+            <section class="services-wrap" id="services">
+                <div class="container">
+                    <h3 class="services-title">Our Services</h3>
+
+                    <div class="services-scroll-container">
+                        <div class="services-scroll" id="services-scroll">
+                            <article class="service-card touch-feedback">
+                                <div class="service-icon" aria-hidden="true">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <h5>Tally Implementation</h5>
+                                <p>Complete Tally ERP setup and customization for your business needs</p>
+                            </article>
+
+                            <article class="service-card touch-feedback">
+                                <div class="service-icon" aria-hidden="true">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h5>Custom TDL</h5>
+                                <p>Tailored Tally Definition Language solutions for unique requirements</p>
+                            </article>
+
+                            <article class="service-card touch-feedback">
+                                <div class="service-icon" aria-hidden="true">
+                                    <i class="fas fa-file-invoice"></i>
+                                </div>
+                                <h5>E-Invoice Setup</h5>
+                                <p>Seamless integration with GST e-invoice portal and compliance.</p>
+                            </article>
+
+                            <article class="service-card touch-feedback">
+                                <div class="service-icon" aria-hidden="true">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <h5>E-Way Bill Setup</h5>
+                                <p>Automated e-way bill generation and management system</p>
+                            </article>
+
+                            <article class="service-card touch-feedback">
+                                <div class="service-icon" aria-hidden="true">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h5>Customer Support</h5>
+                                <p>Round-the-clock customer support and maintenance services</p>
+                            </article>
+                        </div>
+
+                        <!-- <div class="scroll-indicator" id="scroll-indicator">
+                            <div class="scroll-dot active"></div>
+                            <div class="scroll-dot"></div>
+                            <div class="scroll-dot"></div>
+                            <div class="scroll-dot"></div>
+                            <div class="scroll-dot"></div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- GOOGLE DRIVE PDF DOWNLOAD SECTION -->
+            <section class="drive-download-section" id="resources">
+                <div class="container">
+                    <h3 class="section-title">List of TDL with Benefits & Features</h3>
+
+                    <div class="row g-4 align-items-center">
+                        <div class="col-12 col-md-6">
+                            <!-- Drive inline preview. Replace YOUR_DRIVE_FILE_ID_HERE with the actual Drive file id -->
+                            <div class="drive-preview" aria-hidden="false" aria-label="PDF preview">
+                                <iframe src="https://drive.google.com/file/d/1RWv5NItQ4Eut6Ws0rsgcryB4AIILXcQm/preview"
+                                    width="100%" height="100%" style="border: none;" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="download-card info-card">
+                                <div class="info-icon" aria-hidden="true">
+                                    <i class="fas fa-file-pdf"></i>
+                                </div>
+                                <div class="info-text">
+
+                                    <!-- Direct-download link. JS will replace data-file-id into a working link. -->
+
+                                    <a id="drive-download-btn" class="btn btn-primary touch-feedback" href="#"
+                                        data-file-id="1RWv5NItQ4Eut6Ws0rsgcryB4AIILXcQm"
+                                        aria-label="Download brochure PDF">
                                         <i class="fas fa-download me-1"></i> Download PDF
                                     </a>
 
-                                    <a id="drive-open-btn" class="btn btn-outline-secondary mt-2"
-                                        href="https://drive.google.com/file/d/1RWv5NItQ4Eut6Ws0rsgcryB4AIILXcQm/view"
-                                        target="_blank" rel="noopener" aria-label="Open brochure in Google Drive">
-                                        Open in Drive
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <p class="note" style="margin-top:0.75rem; font-size:13px; opacity:0.8;">
+                        <!-- Note: For the direct download button to work, set the Drive file permission to "Anyone with the link
+                        can view". -->
+                    </p>
                 </div>
+            </section>
 
-                <p class="note" style="margin-top:0.75rem; font-size:13px; opacity:0.8;">
-                    <!-- Note: For the direct download button to work, set the Drive file permission to "Anyone with the link
-                    can view". -->
-                </p>
-            </div>
-        </section>
-
-
-        <!-- SERVICES SECTION -->
-        <section class="services-wrap">
-            <div class="container">
-                <h3 class="services-title">Our Services</h3>
-
-                <div class="services-scroll-container">
-                    <div class="services-scroll" id="services-scroll">
-                        <article class="service-card">
-                            <div class="service-icon" aria-hidden="true">
-                                <i class="fas fa-calculator"></i>
-                            </div>
-                            <h5>Tally Implementation</h5>
-                            <p>Complete Tally ERP setup and customization for your business needs</p>
-                        </article>
-
-                        <article class="service-card">
-                            <div class="service-icon" aria-hidden="true">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h5>Custom TDL</h5>
-                            <p>Tailored Tally Definition Language solutions for unique requirements</p>
-                        </article>
-
-                        <article class="service-card">
-                            <div class="service-icon" aria-hidden="true">
-                                <i class="fas fa-file-invoice"></i>
-                            </div>
-                            <h5>E-Invoice Setup</h5>
-                            <p>Seamless integration with GST e-invoice portal and compliance.</p>
-                        </article>
-
-                        <article class="service-card">
-                            <div class="service-icon" aria-hidden="true">
-                                <i class="fas fa-truck"></i>
-                            </div>
-                            <h5>E-Way Bill Setup</h5>
-                            <p>Automated e-way bill generation and management system</p>
-                        </article>
-
-                        <article class="service-card">
-                            <div class="service-icon" aria-hidden="true">
-                                <i class="fas fa-headset"></i>
-                            </div>
-                            <h5>Customer Support</h5>
-                            <p>Round-the-clock customer support and maintenance services</p>
-                        </article>
-                    </div>
-
-                    <!-- <div class="scroll-indicator" id="scroll-indicator">
-                        <div class="scroll-dot active"></div>
-                        <div class="scroll-dot"></div>
-                        <div class="scroll-dot"></div>
-                        <div class="scroll-dot"></div>
-                        <div class="scroll-dot"></div>
-                    </div> -->
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="container">
+                    <p>&copy; <span id="current-year">2025</span> Mehul Patel | Shivansh Infosys</p>
+                    <p style="font-size: 12px; opacity: 0.7;">
+                        Empowering businesses with technology since 2007
+                    </p>
                 </div>
-            </div>
-        </section>
+            </footer>
+        </main>
 
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="container">
-                <p>&copy; 2025 Mehul Patel | Shivansh Infosys</p>
-                <p style="font-size: 12px; opacity: 0.7;">
-                    Empowering businesses with technology since 2007
-                </p>
-            </div>
-        </footer>
-    </main>
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" aria-label="Main navigation">
+            <a href="#contact" class="mobile-nav-item touch-feedback">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+            <a href="#videos" class="mobile-nav-item touch-feedback">
+                <i class="fas fa-video"></i>
+                <span>Videos</span>
+            </a>
+            <a href="#services" class="mobile-nav-item touch-feedback">
+                <i class="fas fa-concierge-bell"></i>
+                <span>Services</span>
+            </a>
+            <a href="#resources" class="mobile-nav-item touch-feedback">
+                <i class="fas fa-file-pdf"></i>
+                <span>Resources</span>
+            </a>
+        </nav>
+
+        <!-- Back to Top Button -->
+        <!-- <a href="#" class="back-to-top touch-feedback" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </a> -->
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -1276,6 +1598,54 @@
 
             // Add entrance animations
             addEntranceAnimations();
+
+            // Initialize mobile navigation
+            initMobileNavigation();
+
+            // Initialize back to top button
+            initBackToTop();
+        }
+
+        function initMobileNavigation() {
+            const navItems = document.querySelectorAll('.mobile-nav-item');
+            const sections = document.querySelectorAll('section');
+            
+            // Highlight active section in mobile nav
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navItems.forEach(item => {
+                            if (item.getAttribute('href') === `#${id}`) {
+                                item.classList.add('active');
+                            } else {
+                                item.classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        }
+
+        function initBackToTop() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
         }
 
         function initServicesScroll() {
@@ -1334,6 +1704,9 @@
         function addSmoothScrolling() {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
+                    // Don't apply to mobile nav items
+                    if (this.classList.contains('mobile-nav-item')) return;
+                    
                     e.preventDefault();
                     const target = document.querySelector(this.getAttribute('href'));
                     if (target) {
@@ -1348,7 +1721,7 @@
 
         function addInteractionFeedback() {
             // Add touch feedback for mobile
-            const interactiveElements = document.querySelectorAll('.social-btn, .info-card, .service-card, .book-btn, .company-link');
+            const interactiveElements = document.querySelectorAll('.social-btn, .info-card, .service-card, .book-btn, .company-link, .touch-feedback');
 
             interactiveElements.forEach(element => {
                 // Touch start
@@ -1365,7 +1738,7 @@
             });
 
             // Add ripple effect to buttons
-            const buttons = document.querySelectorAll('.book-btn, .social-btn, .company-link');
+            const buttons = document.querySelectorAll('.book-btn, .social-btn, .company-link, .touch-feedback');
             buttons.forEach(button => {
                 button.addEventListener('click', createRipple);
             });
@@ -1422,6 +1795,7 @@
             images.forEach(img => {
                 img.addEventListener('load', function () {
                     this.style.opacity = '1';
+                    this.classList.add('loaded');
                 });
                 img.style.opacity = '0';
                 img.style.transition = 'opacity 0.3s ease';
@@ -1509,33 +1883,33 @@
     </script>
 
     <script>
-  (function () {
-    // Drive file id comes from data-file-id attribute.
-    const downloadBtn = document.getElementById('drive-download-btn');
-    if (!downloadBtn) return;
+        (function () {
+            // Drive file id comes from data-file-id attribute.
+            const downloadBtn = document.getElementById('drive-download-btn');
+            if (!downloadBtn) return;
 
-    const fileId = downloadBtn.dataset.fileId || '';
-    // direct-download url for Google Drive files
-    const directUrl = fileId ? `https://drive.google.com/uc?export=download&id=${fileId}` : '#';
+            const fileId = downloadBtn.dataset.fileId || '';
+            // direct-download url for Google Drive files
+            const directUrl = fileId ? `https://drive.google.com/uc?export=download&id=${fileId}` : '#';
 
-    // Set the href so middle-click / long-press works
-    downloadBtn.setAttribute('href', directUrl);
-    // Open in new tab to avoid navigation interruption
-    downloadBtn.setAttribute('target', '_blank');
-    downloadBtn.setAttribute('rel', 'noopener');
+            // Set the href so middle-click / long-press works
+            downloadBtn.setAttribute('href', directUrl);
+            // Open in new tab to avoid navigation interruption
+            downloadBtn.setAttribute('target', '_blank');
+            downloadBtn.setAttribute('rel', 'noopener');
 
-    // Optional: try to fetch blob and trigger native download (may be blocked by CORS)
-    downloadBtn.addEventListener('click', async function (e) {
-      if (!fileId) {
-        e.preventDefault();
-        return;
-      }
-      // Let the browser handle the link by default (works in most cases).
-      // If you want to attempt a programmatic fetch+download you can add logic here,
-      // but be aware Google Drive may block cross-origin requests for large files.
-    });
-  })();
-</script>
+            // Optional: try to fetch blob and trigger native download (may be blocked by CORS)
+            downloadBtn.addEventListener('click', async function (e) {
+                if (!fileId) {
+                    e.preventDefault();
+                    return;
+                }
+                // Let the browser handle the link by default (works in most cases).
+                // If you want to attempt a programmatic fetch+download you can add logic here,
+                // but be aware Google Drive may block cross-origin requests for large files.
+            });
+        })();
+    </script>
 
 </body>
 
