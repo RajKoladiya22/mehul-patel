@@ -61,9 +61,7 @@
     </script>
 
     <!-- Preconnect to external domains -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -323,7 +321,7 @@
 
         .social-btn:hover,
         .social-btn:focus {
-            /* transform: translateY(-4px) scale(1.05);*/
+           /* transform: translateY(-4px) scale(1.05);*/
             background: rgba(255, 255, 255, 0.1);
             color: #fff;
             box-shadow: var(--shadow-primary);
@@ -655,7 +653,7 @@
 
         .date-input:focus {
             outline: none;
-            /* border-color: var(--gold-primary);*/
+           /* border-color: var(--gold-primary);*/
             box-shadow: 0 0 0 3px rgba(202, 164, 95, 0.3);
             background: rgba(255, 255, 255, 0.08);
         }
@@ -744,74 +742,11 @@
             border: 0 !important;
         }
 
-        /* Responsive iframe wrapper used by the playlist and drive preview */
-        .responsive-iframe {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%;
-            /* 16:9 */
-            height: 0;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        /* Focus styles */
+        *:focus {
+            /*outline: 2px solid var(--gold-primary);*/
+           /* outline-offset: 2px;*/
         }
-
-        .responsive-iframe iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        /* Small layout tweaks for sections */
-        .youtube-playlist-section,
-        .drive-download-section {
-            padding: 40px 0;
-            background: transparent;
-        }
-
-        .youtube-playlist-section .section-title,
-        .drive-download-section .section-title {
-            margin-bottom: 1.25rem;
-        }
-
-        .drive-preview iframe {
-            border-radius: 10px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-        }
-
-        .info-card .info-icon {
-            font-size: 28px;
-            margin-right: 12px;
-            color: #C50202;
-        }
-
-        .info-card .value {
-            font-weight: 600;
-            margin-top: 4px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 0.9rem;
-            border-radius: 8px;
-        }
-
-        /* Small responsive adjustments */
-        @media (max-width: 767px) {
-            .responsive-iframe {
-                padding-bottom: 66.66%;
-            }
-
-            .drive-preview iframe {
-                height: 350px;
-            }
-        }
-
 
         /* Animation keyframes */
         @keyframes fadeInUp {
@@ -819,7 +754,6 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -830,11 +764,9 @@
             0% {
                 transform: scale(1);
             }
-
             50% {
                 transform: scale(1.05);
             }
-
             100% {
                 transform: scale(1);
             }
@@ -880,9 +812,7 @@
                 padding: 2rem 1.5rem;
             }
 
-            .section-title,
-            .services-title,
-            .appointment-title {
+            .section-title, .services-title, .appointment-title {
                 font-size: 2rem;
             }
         }
@@ -951,7 +881,6 @@
 
         /* Print styles */
         @media print {
-
             .social-row,
             .appointment-wrap {
                 display: none;
@@ -1088,91 +1017,13 @@
                         <div class="map-container">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4577.419796498114!2d72.7712071!3d21.189703700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04db2480c89d9%3A0x41a9df463ca6ff0d!2sSoham%20Arcade!5e1!3m2!1sen!2sin!4v1755949082557!5m2!1sen!2sin"
-                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- YOUTUBE PLAYLIST SECTION -->
-        <section class="youtube-playlist-section">
-            <div class="container">
-                <h3 class="section-title">Latest Videos — YouTube Playlist</h3>
-
-                <!-- Responsive iframe embed for a playlist.
-                     Replace YOUR_PLAYLIST_ID_HERE with the actual playlist ID. -->
-                <div class="video-wrap" aria-hidden="false" aria-label="YouTube playlist">
-                    <div class="responsive-iframe">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed?listType=playlist&list=PLNcUsPyNOn2HpSjK7DSw3b0QXa3___y86"
-                            title="YouTube playlist" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-
-                <p class="playlist-cta">
-                    Watch on YouTube:
-                    <a href="https://www.youtube.com/playlist?list=PLNcUsPyNOn2HpSjK7DSw3b0QXa3___y86" target="_blank" rel="noopener"
-                        class="link-inline" aria-label="Open playlist on YouTube">Open playlist on YouTube</a>
-                </p>
-            </div>
-        </section>
-
-        <!-- GOOGLE DRIVE PDF DOWNLOAD SECTION -->
-        <section class="drive-download-section">
-            <div class="container">
-                <h3 class="section-title">List of TDL with Benifits & Fetures</h3>
-
-                <div class="row g-4 align-items-center">
-                    <div class="col-12 col-md-6">
-                        <!-- Drive inline preview. Replace YOUR_DRIVE_FILE_ID_HERE with the actual Drive file id -->
-                        <div class="drive-preview" aria-hidden="false" aria-label="PDF preview">
-                            <iframe src="https://drive.google.com/file/d/1RWv5NItQ4Eut6Ws0rsgcryB4AIILXcQm/preview" width="100%"
-                                height="420" style="border: none;" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <div class="download-card info-card">
-                            <div class="info-icon" aria-hidden="true">
-                                <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <div class="info-text">
-                                <small>Brochure PDF</small>
-                                <div class="value">Shivansh Infosys — Services &amp; Pricing</div>
-                                <p style="margin-top:0.5rem; opacity:0.9;">Make sure the file is shared as
-                                    <strong>Anyone with the link — Viewer</strong> in Google Drive.</p>
-
-                                <!-- Direct-download link. JS will replace data-file-id into a working link. -->
-                                <div style="margin-top:0.75rem;">
-                                    <a id="drive-download-btn" class="btn btn-primary mt-2" href="#"
-                                        data-file-id="1RWv5NItQ4Eut6Ws0rsgcryB4AIILXcQm" aria-label="Download brochure PDF">
-                                        <i class="fas fa-download me-1"></i> Download PDF
-                                    </a>
-
-                                    <a id="drive-open-btn" class="btn btn-outline-secondary mt-2"
-                                        href="https://drive.google.com/file/d/1RWv5NItQ4Eut6Ws0rsgcryB4AIILXcQm/view"
-                                        target="_blank" rel="noopener" aria-label="Open brochure in Google Drive">
-                                        Open in Drive
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="note" style="margin-top:0.75rem; font-size:13px; opacity:0.8;">
-                    <!-- Note: For the direct download button to work, set the Drive file permission to "Anyone with the link
-                    can view". -->
-                </p>
-            </div>
-        </section>
-
 
         <!-- SERVICES SECTION -->
         <section class="services-wrap">
@@ -1431,7 +1282,7 @@
         function addEntranceAnimations() {
             // Animate elements on scroll
             const animatedElements = document.querySelectorAll('.info-card, .service-card, .profile-photo, .section-title, .services-title, .appointment-title');
-
+            
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -1440,7 +1291,7 @@
                     }
                 });
             }, { threshold: 0.1 });
-
+            
             animatedElements.forEach(element => {
                 observer.observe(element);
             });
@@ -1507,36 +1358,6 @@
         // Initialize accessibility enhancements
         enhanceAccessibility();
     </script>
-
-    <script>
-  (function () {
-    // Drive file id comes from data-file-id attribute.
-    const downloadBtn = document.getElementById('drive-download-btn');
-    if (!downloadBtn) return;
-
-    const fileId = downloadBtn.dataset.fileId || '';
-    // direct-download url for Google Drive files
-    const directUrl = fileId ? `https://drive.google.com/uc?export=download&id=${fileId}` : '#';
-
-    // Set the href so middle-click / long-press works
-    downloadBtn.setAttribute('href', directUrl);
-    // Open in new tab to avoid navigation interruption
-    downloadBtn.setAttribute('target', '_blank');
-    downloadBtn.setAttribute('rel', 'noopener');
-
-    // Optional: try to fetch blob and trigger native download (may be blocked by CORS)
-    downloadBtn.addEventListener('click', async function (e) {
-      if (!fileId) {
-        e.preventDefault();
-        return;
-      }
-      // Let the browser handle the link by default (works in most cases).
-      // If you want to attempt a programmatic fetch+download you can add logic here,
-      // but be aware Google Drive may block cross-origin requests for large files.
-    });
-  })();
-</script>
-
 </body>
 
 </html>
