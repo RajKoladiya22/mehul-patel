@@ -1215,6 +1215,288 @@
                 </div>
             </section>
 
+            <!-- WHY SHIVANSH INFOSYS SECTION -->
+            <section class="why-shivansh-section">
+                <div class="container">
+                    <h3 class="services-title">Why Shivansh Infosys?</h3>
+
+                    <div class="row g-4">
+                        <!-- Feature 1 -->
+                        <div class="col-12 col-md-6">
+                            <article class="feature-card">
+                                <div class="feature-content">
+                                    <div class="feature-icon" aria-hidden="true">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h4>3-Star Certified Partner</h4>
+                                    <p>Trusted by Tally for the last 13 years with proven expertise</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="col-12 col-md-6">
+                            <article class="feature-card">
+                                <div class="feature-content">
+                                    <div class="feature-icon" aria-hidden="true">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <h4>7 Dedicated GST & Tax Experts</h4>
+                                    <p>Specialized team for all your GST and taxation needs</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div class="col-12 col-md-6">
+                            <article class="feature-card">
+                                <div class="feature-content">
+                                    <div class="feature-icon" aria-hidden="true">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <h4>6 Tally Certified Team</h4>
+                                    <p>Certified professionals ensuring quality service delivery</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Feature 4 -->
+                        <div class="col-12 col-md-6">
+                            <article class="feature-card">
+                                <div class="feature-content">
+                                    <div class="feature-icon" aria-hidden="true">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+                                    <h4>Weekly Webinars</h4>
+                                    <p>Regular updates on Tally and problem-solving solutions</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Feature 5 -->
+                        <div class="col-12 col-md-6">
+                            <article class="feature-card">
+                                <div class="feature-content">
+                                    <div class="feature-icon" aria-hidden="true">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h4>1 Year Free AMC</h4>
+                                    <p>Comprehensive maintenance and support at no extra cost</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Feature 6 -->
+                        <div class="col-12 col-md-6">
+                            <article class="feature-card">
+                                <div class="feature-content">
+                                    <div class="feature-icon" aria-hidden="true">
+                                        <i class="fas fa-headset"></i>
+                                    </div>
+                                    <h4>Customer Support Groups</h4>
+                                    <p>Dedicated customer-wise support groups for personalized assistance</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <style>
+                /* Why Shivansh Infosys Section Styles */
+                .why-shivansh-section {
+                    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+                    padding: 3rem 0;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .why-shivansh-section::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.02'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3Ccircle cx='27' cy='7' r='1'/%3E%3Ccircle cx='47' cy='7' r='1'/%3E%3Ccircle cx='7' cy='27' r='1'/%3E%3Ccircle cx='27' cy='27' r='1'/%3E%3Ccircle cx='47' cy='27' r='1'/%3E%3Ccircle cx='7' cy='47' r='1'/%3E%3Ccircle cx='27' cy='47' r='1'/%3E%3Ccircle cx='47' cy='47' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                    opacity: 0.3;
+                    z-index: 1;
+                }
+
+                .why-shivansh-section .container {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                .feature-card {
+                    background: #fff;
+                    border-radius: var(--border-radius-lg);
+                    padding: 2rem 1.5rem;
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1.5rem;
+                    transition: var(--transition);
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+                    border: 1px solid rgba(202, 164, 95, 0.1);
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .feature-card::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background: linear-gradient(90deg, var(--gold-primary), var(--gold-light));
+                    transform: scaleX(0);
+                    transition: var(--transition);
+                }
+
+                .feature-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+                    border-color: var(--gold-primary);
+                }
+
+                .feature-card:hover::before {
+                    transform: scaleX(1);
+                }
+
+                .feature-icon {
+                    width: 50px;
+                    height: 50px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: linear-gradient(135deg, var(--teal-primary), var(--teal-secondary));
+                    color: var(--gold-primary);
+                    border-radius: var(--border-radius);
+                    font-size: 1.8rem;
+                    flex-shrink: 0;
+                    transition: var(--transition);
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                }
+
+                .feature-card:hover .feature-icon {
+                    transform: scale(1.1) rotate(5deg);
+                    background: linear-gradient(135deg, var(--gold-primary), var(--gold-light));
+                    color: var(--teal-primary);
+                    box-shadow: 0 8px 25px rgba(202, 164, 95, 0.3);
+                }
+
+                .feature-content {
+                    flex: 1;
+                    min-width: 0;
+                }
+
+                .feature-content h4 {
+                    font-family: "Playfair Display", serif;
+                    color: var(--teal-primary);
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    margin: 0 0 0.8rem 0;
+                    line-height: 1.3;
+                }
+
+                .feature-content p {
+                    color: #666;
+                    font-size: 0.95rem;
+                    line-height: 1.6;
+                    margin: 0;
+                    opacity: 0.9;
+                }
+
+                /* Mobile optimizations */
+                @media (max-width: 767px) {
+                    .why-shivansh-section {
+                        padding: 2.5rem 0;
+                    }
+
+                    .feature-card {
+                        padding: 1.5rem 1rem;
+                        flex-direction: column;
+                        text-align: center;
+                        gap: 1rem;
+                    }
+
+                    .feature-icon {
+                        width: 60px;
+                        height: 60px;
+                        font-size: 1.5rem;
+                        margin: 0 auto;
+                    }
+
+                    .feature-content h4 {
+                        font-size: 1.1rem;
+                        margin-bottom: 0.6rem;
+                    }
+
+                    .feature-content p {
+                        font-size: 0.9rem;
+                    }
+                }
+
+                /* Tablet optimizations */
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    .feature-card {
+                        padding: 1.8rem 1.3rem;
+                    }
+
+                    .feature-icon {
+                        width: 65px;
+                        height: 65px;
+                        font-size: 1.6rem;
+                    }
+                }
+
+                /* Animation for entrance */
+                .feature-card {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    animation: fadeInUp 0.6s ease-out forwards;
+                }
+
+                .feature-card:nth-child(1) {
+                    animation-delay: 0.1s;
+                }
+
+                .feature-card:nth-child(2) {
+                    animation-delay: 0.2s;
+                }
+
+                .feature-card:nth-child(3) {
+                    animation-delay: 0.3s;
+                }
+
+                .feature-card:nth-child(4) {
+                    animation-delay: 0.4s;
+                }
+
+                .feature-card:nth-child(5) {
+                    animation-delay: 0.5s;
+                }
+
+                .feature-card:nth-child(6) {
+                    animation-delay: 0.6s;
+                }
+
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            </style>
+
             <!-- YOUTUBE PLAYLIST SECTION -->
             <section class="youtube-playlist-section">
                 <div class="container">
